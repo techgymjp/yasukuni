@@ -527,7 +527,7 @@
                     } else {
                         isLocationAllowed = false;
                         statusElement.className = 'location-status location-denied';
-                        statusElement.innerHTML = `❌ 靖国神社から${Math.round(distance)}m - アクセス範囲外（100m以内でアクセスしてください）`;
+                        statusElement.innerHTML = `❌ 靖国神社から${Math.round(distance)}m - アクセス範囲外（200m以内でアクセスしてください）`;
                         showRadar();
                     }
                 },
@@ -602,7 +602,7 @@
             
             // 距離情報を更新
             document.getElementById('distanceInfo').textContent = 
-                `距離: ${Math.round(distance)}m (許可範囲: 100m以内)`;
+                `距離: ${Math.round(distance)}m (許可範囲: 200m以内)`;
             document.getElementById('userCoords').textContent = 
                 `📱 あなたの位置: ${userLocation.lat.toFixed(6)}°N, ${userLocation.lng.toFixed(6)}°E`;
             
